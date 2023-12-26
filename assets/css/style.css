@@ -1,0 +1,346 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body, button, input {
+    font-family: "Oswald";
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+}
+
+.button-1 {
+    display: inline-block;
+    padding: 8px 16px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.input-1 {
+    display: block;
+    padding: 8px 8px;
+}
+
+.tag {
+    display: inline-block;
+    padding: 0 8px;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+}
+
+.display-left {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+}
+
+.display-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.display-list {
+    display: flex;
+}
+
+.display-table {
+    display: table;
+}
+
+.letter-spacing-4 {
+    letter-spacing: 4px;
+}
+
+.grayscale {
+    filter: grayscale(75%);
+}
+
+.width-16 {
+    width: 16.6666666666666666666666%;
+}
+
+.width-50 {
+    width: 50%;
+}
+
+.width-third {
+    width: 33.3333333333333333333333%;
+}
+
+.width-two-third {
+    width: 66.6666666666666666666666%;
+}
+
+.width-83 {
+    width: 83.3333333333333333333333%;
+}
+
+.width-max {
+    width: 100%;
+}
+
+.border-1 {
+    border: 1px solid #ccc;
+}
+
+.border-bottom {
+    border: 1px solid #ddd;
+}
+
+.bc-white {
+    color: #000;
+    background-color: #fff;
+}
+
+.bc-gray {
+    background-color: #ccc;
+}
+
+.bc-black {
+    background-color: #000;
+    color: #fff;
+}
+
+.bc-light-grey {
+    background-color: #f1f1f1;
+    color: #000;
+}
+
+.bc-bright-gray {
+    background-color: #eee;
+}
+
+.bc-dark-gray {
+    background-color: #616161;
+}
+
+.bc-red {
+    background-color: #f44336;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-black {
+    color: #000;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.font-opensans {
+    font-family: "Open Sans";
+}
+
+.font-12 {
+    font-size: 12px;
+}
+
+.font-15 {
+    font-size: 15px;
+}
+
+.font-18 {
+    font-size: 18px;
+}
+
+.font-24 {
+    font-size: 24px;
+}
+
+.font-large {
+    font-size: 48px;
+}
+
+.font-super {
+    font-size: 64px;
+}
+
+.opac-60 {
+    opacity: 0.6;
+}
+
+.hover-gray:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.hover-light-gray:hover {
+    background-color: #ccc;
+    opacity: 1;
+    color: #000;
+    cursor: pointer;
+}
+
+.padding-0-16 {
+    padding: 0 16px;
+}
+
+.padding-8-16 {
+    padding: 8px 16px;
+}
+
+.padding-12-24 {
+    padding: 12px 24px;
+}
+
+.padding-48-16 {
+    padding: 48px 16px;
+}
+
+.padding-16-0 {
+    padding: 16px 0;
+}
+
+.padding-8 {
+    padding: 8px;
+}
+
+.padding-16 {
+    padding: 16px;
+}
+
+.padding-32 {
+    padding: 32px;
+}
+
+.padding-bottom-15 {
+    padding-bottom: 15px;
+}
+
+.margin-16 {
+    margin: 16px;
+}
+
+.margin-15-0 {
+    margin: 15px 0;
+}
+
+.margin-auto {
+    margin: 0 auto;
+}
+
+.margin-right-16 {
+    margin-right: 16px;
+}
+
+.margin-bottom-16 {
+    margin-bottom: 16px;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    color: #fff;
+}
+
+#header .header-icon {
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+#hero-section .image-large {
+    position: relative;
+}
+
+#content {
+    display: flex;
+}
+
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    height: 100%;
+    padding-top: 100px;
+    background-color: rgba(0,0,0,0.4);
+    animation: animateopac 0.8s;
+}
+
+#modal-content {
+    margin: 0 auto;
+    width: 900px;
+}
+
+#modal-heading {
+    position: relative;
+}
+
+#modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@keyframes animateopac {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
